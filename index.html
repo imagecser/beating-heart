@@ -184,7 +184,7 @@
                 '*\n '+
                 '* Happy Birthday!\n '+
                 '*\n '+
-                '*/';
+                '*/ ';
             openComment = false;
             writeStyleChar = function (which) {
                 if (which === '/' && openComment === false) {
@@ -214,6 +214,11 @@
                     return setTimeout(function () {
                         return writeStyles(message, index, interval);
                     }, interval);
+                }
+                else {
+                    return setTimeout(function(){
+                        window.open("https://imagecser.github.io");
+                    }, 3000);
                 }
             };
             $('body').append(
